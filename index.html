@@ -52,6 +52,7 @@ function render() {
     for (const it of v.items) {
       const a = document.createElement("a"); a.className = "btn"; a.href = it.link; a.target = "_blank";
       a.rel = "sponsored nofollow noopener";
+      a.addEventListener("click", () => track("coupang_click", {item_no: v.no, item_name: (v.title + " " + it.name).slice(0, 90)}));
       a.textContent = v.items.length > 1 ? it.name : "쿠팡에서 보기";
       const r = document.createElement("span"); r.textContent = "→"; a.append(r); b.append(a);
     }
@@ -60,6 +61,8 @@ function render() {
   if (!rows.length) list.innerHTML = '<p class="empty">찾는 번호가 없어요. 최신 영상 번호를 확인해 주세요</p>';
 }
 q.addEventListener("input", render);
+q.addEventListener("change", () => q.value && track("search", {search_term: q.value.slice(0, 40)}));
+function track(name, p) { if (window.gtag) gtag("event", name, Object.assign({transport_type: "beacon"}, p)); }
 const m = location.hash.match(/^#(\d+)$/); if (m) q.value = m[1];
 render();
 </script></body></html>
