@@ -7,21 +7,23 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCTX3WTCEX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-QCTX3WTCEX');</script>
 <style>
-:root{--red:#e61e1e;--ink:#141414;--sub:#777;--bg:#f6f6f6;--card:#fff;--yellow:#ffd600}
+:root{--red:#4a3424;--ink:#3b2a1e;--sub:#9a8572;--bg:#f7f1e8;--card:#fffdf9;--yellow:#e9d8c2}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
 font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
-header{background:var(--red);padding:22px 16px 18px;text-align:center;color:#fff}
-.avatar{width:84px;height:84px;border-radius:50%;border:4px solid #fff;background:var(--yellow);object-fit:cover}
+header{background:linear-gradient(rgba(247,241,232,.55),rgba(247,241,232,.9)),url(img/header.jpg) center/cover;
+padding:26px 16px 20px;text-align:center;color:var(--ink)}
+.avatar{width:92px;height:92px;border-radius:50%;border:4px solid #fffdf9;box-shadow:0 4px 14px rgba(74,52,36,.25);object-fit:cover}
 h1{margin:8px 0 2px;font-size:24px}header p{margin:0;font-size:13px;opacity:.9}
-.disc{font-size:11.5px;color:#fff;opacity:.85;margin-top:8px}
+.disc{font-size:11.5px;color:var(--sub);margin-top:8px}
 .wrap{max-width:560px;margin:0 auto;padding:14px 16px 40px}
 .search{position:sticky;top:0;z-index:2;background:var(--bg);padding:10px 0}
-.search input{width:100%;padding:14px 18px;font-size:17px;border:3px solid var(--ink);border-radius:999px;outline:none}
+.search input{width:100%;padding:14px 18px;font-size:17px;border:2px solid #d9c7b0;background:var(--card);color:var(--ink);border-radius:999px;outline:none}
+.search input:focus{border-color:var(--red)}
 .hint{font-size:13px;color:var(--sub);margin:4px 6px 0}
 #list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
 .card{display:flex;flex-direction:column;background:var(--card);border-radius:16px;padding:8px;
-box-shadow:0 2px 0 rgba(0,0,0,.08);min-width:0}
-.thumb{position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:#ddd}
+box-shadow:0 2px 10px rgba(74,52,36,.08);min-width:0}
+.thumb{position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:#ece3d6}
 .thumb img{width:100%;height:100%;object-fit:cover}
 .no{position:absolute;left:0;top:0;background:var(--yellow);color:var(--ink);font-weight:900;font-size:22px;
 padding:2px 10px;border-bottom-right-radius:12px}
@@ -33,7 +35,7 @@ padding:10px 10px;border-radius:10px;margin-top:6px}
 footer{text-align:center;font-size:12px;color:var(--sub);padding:0 16px 30px}
 </style></head><body>
 <header><img class="avatar" src="img/avatar.png" alt="품절각">
-<h1>품절각 링크 모음</h1><p>영상에 나온 <b>번호</b>로 찾으세요</p>
+<h1>품절각 링크 모음</h1><p>살림이 쉬워지는 1분 · 영상에 나온 <b>번호</b>로 찾으세요</p>
 <div class="disc">이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div></header>
 <div class="wrap">
 <div class="search"><input id="q" inputmode="search" placeholder="번호나 상품명 (예: 6, 가습기)" autocomplete="off">
