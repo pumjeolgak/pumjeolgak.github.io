@@ -59,7 +59,7 @@ function render() {
       const a = document.createElement("a"); a.className = "btn"; a.href = it.link; a.target = "_blank";
       a.rel = "sponsored nofollow noopener";
       a.addEventListener("click", () => track("coupang_click", {item_no: v.no, item_name: (v.title + " " + it.name).slice(0, 90)}));
-      a.textContent = v.items.length > 1 ? it.name : "쿠팡에서 보기";
+      a.textContent = v.items.length > 1 ? it.name : "구매하기";
       const r = document.createElement("span"); r.textContent = "→"; a.append(r); b.append(a);
     }
     c.append(t, b); return c;
