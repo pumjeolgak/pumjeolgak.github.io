@@ -125,3 +125,9 @@ footer a{display:inline-block;margin-top:10px}
 .idx .btn{display:block;text-align:center;margin-top:20px}
 .idx .sample{color:#777}
 @media(max-width:600px){.tpls{grid-template-columns:minmax(0,1fr)}}
+/* 템플릿 하단 제작 신청 띠(샘플 사이트 전용) */
+body:has(.order){padding-bottom:72px}
+.order{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;align-items:center;justify-content:center;gap:16px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:#1d2a4d;color:#fff;font-size:15px;box-shadow:0 -4px 18px rgba(0,0,0,.18)}
+.order p{margin:0}.order b{color:#ffd23f}
+.order a{flex:none;background:#ffd23f;color:#1d2a4d;font-weight:800;text-decoration:none;padding:10px 18px;border-radius:999px}
+@media (max-width:480px){.order{font-size:13px;gap:10px}.order a{padding:9px 14px}}
